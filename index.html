@@ -9,20 +9,31 @@
         <style type="text/css">
             table,tr,th,td {
                 border-spacing: 5em;
+                font-family:avenir;
+            }
+            a {
+                font-family:avenir;
             }
             .first-item {
-                padding-left: 5em;
+                padding-left: 3em;
             }
             /* Make the image black and white */
             img {
                 filter: grayscale(100%);
+            }
+
+            @font-face {
+                font-family: 'cursive-dancing';
+                src: url('fonts/dancing-script.dancingscriptot.otf') format('opentype');
+                font-weight: normal;
+                font-style: normal;
             }
         </style>
     </head>
     <body style="background-color:white;">
         <!-- Updating Bootstrap Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand first-item" href="#">Max & Emily are getting hitched!</a>
+          <a class="navbar-brand first-item" style="font-family:cursive-dancing; font-size: 2em;" href="#">Max & Emily are getting hitched!</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -50,7 +61,7 @@
                         <br><br>
                         <b>Max</b> is a <s>beautiful lad</s> charming young man from Alaska.  He is a 5th year PhD student in computer science, which means that he studies mathematical nonsense.  Max enjoys mathematics, rock climbing, and no-gi jiu jitsu.  He also likes chasing after Emily.
                         <br><br>
-
+                        Naturally, this is an open-source website and is under active development.  Check back later for, e.g., working links in the menu, etc.
                     </p></td>
                 </tr>
             </table>
