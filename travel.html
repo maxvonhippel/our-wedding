@@ -28,47 +28,101 @@
                 font-weight: normal;
                 font-style: normal;
             }
+
+            p, li, td, tr {
+                font-size: 1.1em;
+            }
+
+            td {
+                vertical-align:top;
+            }
+
+            table {
+              border-collapse: separate;
+              border-spacing: 0 15px;
+            }
         </style>
     </head>
     <body style="background-color:white;">
         <!-- Updating Bootstrap Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a href="https://mxvh.pl/our-wedding" class="navbar-brand first-item" style="font-family:cursive-dancing; font-size: 2em;" href="#">Max & Emily are getting hitched!</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#schedule">Schedule</a>
-              </li>
-              <li class="nav-item">
-                <a href="https://mxvh.pl/our-wedding/travel" class="nav-link" href="#travel-venue">Travel & Venue</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#rsvp">RSVP</a>
-              </li>
-            </ul>
-          </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex flex-column align-items-center">
+            <a class="navbar-brand mb-0" style="font-family:cursive-dancing; font-size: 2em; text-align: center;" href="#">Max & Emily are getting hitched!</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-center" style="font-size: 1.5em;" href="#schedule">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://mxvh.pl/our-wedding/travel" class="nav-link text-center" style="font-size: 1.5em;" href="#travel-venue"><b>Travel & Venue</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" style="font-size: 1.5em;" href="#rsvp">RSVP</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
+
 
         <center>        
             <table style="width:80%;" class="center">
                 <tr>
-                    <td style="width: 33.33%;"><img src="pics/max-and-em.jpg" alt="Max and Emily" style="width: 100%;"></td>
-                    <td style="width: 66.66%; vertical-align:top;"><p style="vertical-align:top; padding: 1em 1em 1em 1em;">
-                        <b>Venue:</b> The wedding will take place at the <a href="https://olwandleestate.com/">Olwandle estate</a> which is located <a href="https://goo.gl/maps/kUF6Zntyy7AMca4c6">here</a> in KwaZulu-Natal, South Africa.
-                        <br>
-                        TODO - write about Salt Rock
-                        <br>
-                        TODO - write about Ballito
-                        <br>
-                        TODO - write about travel to get there
-                        <br>
-                        TODO - write about travel recommendations in the area
-                    </p></td>
+                    <td>
+                        <p>
+                            <b>Venue:</b> The wedding will take place at the <a href="https://olwandleestate.com/">Olwandle estate</a> which is located <a href="https://goo.gl/maps/kUF6Zntyy7AMca4c6">here</a> in KwaZulu-Natal, South Africa.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <b>Where to stay:</b> Olwandle Estate is roughly 15m outside of both Ballito and Salt Rock.  Both are adorable surfing towns chalk full of delicious food, beautiful beaches, and lots to do.  We recommend you stay in either of these towns and rent a car so you can explore the other as well as attend the wedding.
+                            We recommend <a href="https://www.petiteprovence.co.za/">Petite Province B&B</a>,
+                            <a href="https://www.saltrockbeach.co.za/">Salt Rock Hotel</a> (the website doesn't always work on the first try, just FYI), or <a href="https://www.thecanelands.co.za/">Canelands Beach Club</a>.  Notably, the Salt Rock Hotel has excellent curry.  All of these options are right on the beach and highly accessible with great food nearby. 
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <b>Travel:</b>  For foreign visitors (that means you, Americans) we suggest flying into <a href="https://en.wikipedia.org/wiki/King_Shaka_International_Airport">King Shaka International Airport</a>.<a href="#footnote-1">¹</a>  It's 15 minutes from Ballito.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                        Things that we recommend doing include:
+                            <ul>
+                                <li>walking or running the Ballito beach boardwalk;</li>
+                                <li>grabbing breakfast or lunch at the Waterberries cafe;</li>
+                                <li>for the exercise enthusiasts, renting mountain bikes or trail-running at Holla Trails;</li>
+                                <li>early morning lap swims at Thompson's tidal pools;</li>
+                                <li>eating at any of the restaurants or bars at the Lifestyle Center;</li>
+                                <li>if you're up for a drive, hiking in the Drakensberg world heritage cite (2.5-3.5hrs away) which has endless hikes through beautiful mountains riddled with cute cottages where you can spend the night.</li>
+                                <li>Additionally, if you have the time, we highly recommend visiting Cape Town (particularly if you can get there by driving the Garden Route), the Transkei, and Stallenbosch (particularly if you enjoy good wine and food).</li>
+                            </ul>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <b>Nearby game parks:</b>  You are in AFRICA so you should go do "safari".  A prime example would be going to a game park!  Here are some very cool nearby game parks which we recommend:
+                            <ol>
+                                <li><a href="https://www.nature-reserve.co.za/hluhluwe-imfolozi-wildlife-preserve.html">Imfolozi</a> and <a href="https://www.hluhluwegamereserve.com/">Hluhluwe</a>.  For Americans: they are both pronounced as if you are bowing your nose and using the restroom at once.  They are both about an hour away and you're highly likely to see the entire big five, modulo luck!  The primary difference is that ... nothing, these are the same thing, flip a coin to choose which one you go to.</li>
+                                <br>
+                                <li><a href="https://www.andbeyond.com/destinations/africa/south-africa/kwazulu-natal/phinda-private-game-reserve/">Pinda</a>.  This park has walking adventures!  So, if your name is Cathy von Hippel, and you <i>cannot stay still</i>, this is the park for you!  The chefs and rangers are amazing, and we highly recommend it.</li>
+                                <br>
+                                <li><a href="https://www.krugerpark.co.za/">Kruger.</a>  This is the biggest one by far ... it is 7,523 mi².  For reference, Connecticut is 5,018 mi².  So if you want so see some African critter it's probably in there.  On the other hand, this is the most popular game park by far, so for a more niche experience, we recommend the other ones.</li>
+                            </ol>
+                        </p>
+                    </td>
                 </tr>
             </table>
+            <p id="footnote-1" style="font-size:0.5em">¹ You should google King Shaka.</p>
         </center>
         <br>
 
