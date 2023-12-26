@@ -29,37 +29,23 @@
                 font-style: normal;
             }
 
-            p {
-                font-size: 1.2em;
+            p, li, td, tr {
+                font-size: 1.1em;
             }
 
-            /* Set background image for the top section */
-            body {
-                background-image: url('pics/top-left-leaf.png');
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-position: top left;
+            td {
+                vertical-align:top;
             }
 
-            /* Set background image for the bottom section */
-            .bottom-section {
-                background-image: url('pics/bottom-right-leaf.png');
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-position: bottom right;
-            }
-
-            #nav1
-            {  
-                background-color:#F00; /*whichever you want*/
-                opacity: 0.8; 
-                filter:(opacity=50);       
+            table {
+              border-collapse: separate;
+              border-spacing: 0 15px;
             }
         </style>
     </head>
     <body style="background-color:white;">
         <!-- Updating Bootstrap Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex flex-column align-items-center transparent" id="nav1">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex flex-column align-items-center">
             <a href="https://maxandemilys.wedding/" class="navbar-brand mb-0" style="font-family:cursive-dancing; font-size: 2em; text-align: center;">Max & Emily are getting hitched!</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -73,7 +59,7 @@
                         <a href="https://maxandemilys.wedding/travel" class="nav-link text-center" style="font-size: 1.5em;" href="#travel-venue">Travel & Venue</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-center" style="font-size: 1.5em;" href="https://maxandemilys.wedding/rsvp">RSVP</a>
+                        <b><a class="nav-link text-center" style="font-size: 1.5em;" href="https://maxandemilys.wedding/rsvp">RSVP</a></b>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-center" style="font-size: 1.5em;" href="https://maxandemilys.wedding/faq">FAQ</a>
@@ -83,34 +69,19 @@
         </nav>
 
 
-
         <center>        
             <table style="width:80%;" class="center">
                 <tr>
-                    <td><center><img src="pics/max-and-em.jpg" alt="Max and Emily" style="width: 80%;"></center></td>
-                </tr>
-                <tr>
-                    <td style="vertical-align:top;"><p style="vertical-align:top; padding: 1em 1em 1em 1em;">
-                        <b>Emily</b> is a beautiful lass from South Africa.  She is a 2nd year PhD student in physiology, she has roughly 83 dimples (I counted), and she enjoys running, biking, and recovering from injuries related to running and biking.
-                        <br><br>
-                        <b>Max</b> is a <s>beautiful lad</s> charming young man from Alaska.  He is a 5th year PhD student in computer science, which means that he studies mathematical nonsense.  Max enjoys mathematics, rock climbing, and no-gi jiu jitsu.  He also likes chasing after Emily.
-                    </p></td>
+                    <td>
+                        <p>
+                            Please RSVP for yourself by April 30, and let us know if you plan to bring a +1.
+                            To RSVP, email Max at maxvh@hey.com, or Emily at emily.pcmail@gmail.com.
+                        </p>
+                    </td>
                 </tr>
             </table>
         </center>
         <br>
-
-        <div class="bottom-section">
-            <center>        
-                <table style="width:80%;" class="center">
-                    <tr>
-                        <td style="vertical-align:top;"><p style="vertical-align:top; padding: 1em 1em 1em 1em;">
-                            Naturally, this is an open-source website and is under active development.  Check back later for, e.g., working links in the menu, etc.
-                        </p></td>
-                    </tr>
-                </table>
-            </center>
-        </div>
 
         <!-- Adding Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
