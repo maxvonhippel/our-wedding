@@ -19,7 +19,7 @@
             }
             /* Make the image black and white */
             img {
-                filter: grayscale(0%);
+                filter: grayscale(100%);
             }
 
             @font-face {
@@ -29,17 +29,31 @@
                 font-style: normal;
             }
 
-            p, li, td, tr {
-                font-size: 1.1em;
+            p {
+                font-size: 1.2em;
             }
 
-            td {
-                vertical-align:top;
+            /* Set background image for the top section */
+            body {
+                background-image: url('pics/top-left-leaf.png');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: top left;
             }
 
-            table {
-              border-collapse: separate;
-              border-spacing: 0 15px;
+            /* Set background image for the bottom section */
+            .bottom-section {
+                background-image: url('pics/bottom-right-leaf.png');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: bottom right;
+            }
+
+            #nav1
+            {  
+                background-color:#F00; /*whichever you want*/
+                opacity: 0.8; 
+                filter:(opacity=50);       
             }
         </style>
     </head>
